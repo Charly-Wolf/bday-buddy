@@ -2,13 +2,13 @@ import Person from "./Person"
 
 const PeopleList = ({people}) => {
   return (
-    <div style={{ background: 'white', padding: '2rem' }}>
+    <section>
       {people.map(p => {
         return (
           <Person key={p.id} {...p} />
         )
       })}
-    </div>
+    </section>
   )
 }
 export default PeopleList

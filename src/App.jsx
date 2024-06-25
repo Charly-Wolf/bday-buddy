@@ -9,13 +9,13 @@ const App = () => {
   }
 
   return (
-    <>
-      <h2>{people.length} Birthdays Today</h2>
+    <section className='container'>
+      <h3>{people.length} Birthdays Today</h3>
       <PeopleList people={people} />
       <button onClick={clearList} className='btn'>
         Clear All
       </button>
-    </>
+    </section>
   )
 }
 export default App
