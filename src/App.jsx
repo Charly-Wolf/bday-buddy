@@ -1,4 +1,21 @@
+import { useState } from 'react'
+import data from './data'
+import PeopleList from './components/PeopleList'
+
 const App = () => {
-  return <h2>Bday Buddy</h2>;
-};
-export default App;
+  const [people, setPeople] = useState(data)
+  const clearList = () => {
+    setPeople([])
+  }
+
+  return (
+    <>
+      <h2>{people.length} Birthdays Today</h2>
+      <PeopleList people={people} />
+      <button onClick={clearList} className='btn'>
+        Clear All
+      </button>
+    </>
+  )
+}
+export default App
