@@ -9,13 +9,15 @@ const App = () => {
   }
 
   return (
-    <section className='container'>
-      <h3>{people.length} Birthdays Today</h3>
-      <PeopleList people={people} />
-      <button type='button' onClick={clearList} className='btn btn-block'>
-        Clear All
-      </button>
-    </section>
+    <main>
+      <section className='container'>
+        <h3>{people.length} Birthdays Today</h3>
+        <PeopleList people={people} />
+        <button type='button' onClick={clearList} className='btn btn-block'>
+          Clear All
+        </button>
+      </section>
+    </main>
   )
 }
 export default App
