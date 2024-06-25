@@ -12,7 +12,7 @@ const App = () => {
     <section className='container'>
       <h3>{people.length} Birthdays Today</h3>
       <PeopleList people={people} />
-      <button onClick={clearList} className='btn'>
+      <button type='button' onClick={clearList} className='btn btn-block'>
         Clear All
       </button>
     </section>
